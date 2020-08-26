@@ -1,29 +1,27 @@
 <?php
 /**
  * Plugin Name: Wolf Metaboxes
- * Plugin URI: %LINK%
- * Description: %DESCRIPTION%
- * Version: %VERSION%
- * Author: %AUTHOR%
- * Author URI: %AUTHORURI%
- * Requires at least: %REQUIRES%
- * Tested up to: %TESTED%
+ * Plugin URI: https://github.com/wolfthemes/wolf-metaboxes
+ * Description: Add metaboxes to your theme.
+ * Version: 1.0.4
+ * Author: WolfThemes
+ * Author URI: http://wolfthemes.com
+ * Requires at least: 5.0
+ * Tested up to: 5.5
  *
- * Text Domain: %TEXTDOMAIN%
+ * Text Domain: wolf-metaboxes
  * Domain Path: /languages/
  *
- * @package %PACKAGENAME%
+ * @package WolfMetaboxes
  * @category Core
- * @author %AUTHOR%
+ * @author WolfThemes
  *
  * Verified customers who have purchased a premium theme at https://wlfthm.es/tf/
  * will have access to support for this plugin in the forums
  * https://wlfthm.es/help/
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 	/**
@@ -32,7 +30,7 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 	 * Contains the main functions for Wolf_Metaboxes_Plugin
 	 *
 	 * @class Wolf_Metaboxes_Plugin
-	 * @version %VERSION%
+	 * @version 1.0.4
 	 * @since 1.0.0
 	 */
 	class Wolf_Metaboxes_Plugin {
@@ -40,17 +38,14 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '%VERSION%';
+		public $version = '1.0.4';
 
 		/**
-		 * @var %NAME% The single instance of the class
+		 * @var Wolf Metaboxes The single instance of the class
 		 */
 		protected static $_instance = null;
 
-		/**
-		 * @var string
-		 */
-		private $update_url = 'https://plugins.wolfthemes.com/update';
+
 
 		/**
 		 * @var the support forum URL
@@ -63,13 +58,13 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		public $template_url;
 
 		/**
-		 * Main %NAME% Instance
+		 * Main Wolf Metaboxes Instance
 		 *
-		 * Ensures only one instance of %NAME% is loaded or can be loaded.
+		 * Ensures only one instance of Wolf Metaboxes is loaded or can be loaded.
 		 *
 		 * @static
 		 * @see WVCCB()
-		 * @return %NAME% - Main instance
+		 * @return Wolf Metaboxes - Main instance
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -79,7 +74,7 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		}
 
 		/**
-		 * %NAME% Constructor.
+		 * Wolf Metaboxes Constructor.
 		 */
 		public function __construct() {
 			$this->define_constants();
@@ -111,7 +106,6 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 				'WMBOX_SLUG' => plugin_basename( dirname( __FILE__ ) ),
 				'WMBOX_PATH' => plugin_basename( __FILE__ ),
 				'WMBOX_VERSION' => $this->version,
-				'WMBOX_UPDATE_URL' => $this->update_url,
 				'WMBOX_SUPPORT_URL' => $this->support_url,
 			);
 
@@ -143,7 +137,7 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		}
 
 		/**
-		 * Init %NAME% when WordPress Initialises.
+		 * Init Wolf Metaboxes when WordPress Initialises.
 		 */
 		public function init() {
 
@@ -156,8 +150,8 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		 */
 		public function load_plugin_textdomain() {
 
-			$domain = '%TEXTDOMAIN%';
-			$locale = apply_filters( '%TEXTDOMAIN%', get_locale(), $domain );
+			$domain = 'wolf-metaboxes';
+			$locale = apply_filters( 'wolf-metaboxes', get_locale(), $domain );
 			load_textdomain( $domain, WP_LANG_DIR . '/' . $domain . '/' . $domain . '-' . $locale . '.mo' );
 			load_plugin_textdomain( $domain, FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		}

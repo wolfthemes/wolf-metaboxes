@@ -1,13 +1,13 @@
 <?php
 /**
- * %NAME% Uninstall
+ * Wolf Metaboxes Uninstall
  *
- * Uninstalling %NAME%
+ * Uninstalling Wolf Metaboxes
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Uninstaller
- * @version %VERSION%
+ * @package WolfMetaboxes/Uninstaller
+ * @version 1.0.4
  */
 
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;

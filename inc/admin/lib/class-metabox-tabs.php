@@ -3,13 +3,11 @@
  * Metabox class
  *
  * @package WordPress
- * @subpackage %NAME%
- * @version %VERSION%
+ * @subpackage Wolf Metaboxes
+ * @version 1.0.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Metabox tabs class
@@ -18,8 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Combine all metaboxes sections into tabs panel
  *
  * @package WordPress
- * @subpackage %NAME%
- * @version %VERSION%
+ * @subpackage Wolf Metaboxes
+ * @version 1.0.4
  */
 class Wolf_Metaboxes {
 
@@ -58,7 +56,7 @@ class Wolf_Metaboxes {
 
 		add_meta_box(
 			'_wolf_metaboxes',
-			sprintf( esc_html__( '%s Options', '%TEXTDOMAIN%' ), $this->get_post_type_name() ),
+			sprintf( esc_html__( '%s Options', 'wolf-metaboxes' ), $this->get_post_type_name() ),
 			array( $this, 'render' ),
 			$this->post_types,
 			$this->context,
@@ -139,10 +137,10 @@ class Wolf_Metaboxes {
 
 		global $post;
 		$post_id = $post->ID;
-		
+
 		$field_id	= sanitize_title( $field['id'] );
 		$type     	= ( isset( $field['type'] ) ) ? $field['type'] : 'text';
-		$label    	= ( isset( $field['label'] ) ) ? $field['label'] : esc_html__( 'Label', '%TEXTDOMAIN%' );
+		$label    	= ( isset( $field['label'] ) ) ? $field['label'] : esc_html__( 'Label', 'wolf-metaboxes' );
 		$desc    	= ( isset( $field['desc'] ) ) ? $field['desc'] : '';
 		$placeholder   = ( isset( $field['placeholder'] ) ) ? $field['placeholder'] : '';
 		$default_value = ( isset( $field['value'] ) ) ? $field['value'] : '';
@@ -175,7 +173,7 @@ class Wolf_Metaboxes {
 			echo '<div class="field-label">';
 				echo '<label for="' . esc_attr( $field_id ) . '">' . sanitize_text_field( $label ) . '</label>';
 			echo '</div>';
-			
+
 			echo '<div class="field-content">';
 			// editor
 				if ( 'editor' == $type ) {
@@ -225,8 +223,8 @@ class Wolf_Metaboxes {
 				?>
 				<div>
 					<input type="text"  name="<?php echo esc_attr( $field_id ); ?>" id="<?php echo esc_attr( $field_id ); ?>" value="<?php echo esc_url( $meta_img); ?>">
-					<br><a href="#" class="button wmbox-reset-file"><?php esc_html_e( 'Clear', '%TEXTDOMAIN%' ); ?></a>
-					<a href="#" class="button wmbox-set-file"><?php esc_html_e( 'Choose a file', '%TEXTDOMAIN%' ); ?></a>
+					<br><a href="#" class="button wmbox-reset-file"><?php esc_html_e( 'Clear', 'wolf-metaboxes' ); ?></a>
+					<a href="#" class="button wmbox-set-file"><?php esc_html_e( 'Choose a file', 'wolf-metaboxes' ); ?></a>
 
 					<?php if ( $desc ) : ?>
 						<br><span class="description"><?php echo wp_kses_post( $desc ); ?></span>
@@ -243,8 +241,8 @@ class Wolf_Metaboxes {
 				<div>
 					<input type="hidden"  name="<?php echo esc_attr( $field_id ); ?>" id="<?php echo esc_attr( $field_id ); ?>" value="<?php echo absint( $meta_img); ?>">
 					<img style="max-width:250px;<?php if ( 0 == $meta_img ) echo ' display:none;'; ?>" class="wmbox-img-preview" src="<?php echo esc_url( $meta_img_url ); ?>" alt="<?php echo esc_attr( $field_id ); ?>">
-					<br><a href="#" class="button wmbox-reset-img"><?php esc_html_e( 'Clear', '%TEXTDOMAIN%' ); ?></a>
-					<a href="#" class="button wmbox-set-img"><?php esc_html_e( 'Choose an image', '%TEXTDOMAIN%' ); ?></a>
+					<br><a href="#" class="button wmbox-reset-img"><?php esc_html_e( 'Clear', 'wolf-metaboxes' ); ?></a>
+					<a href="#" class="button wmbox-set-img"><?php esc_html_e( 'Choose an image', 'wolf-metaboxes' ); ?></a>
 				</div>
 
 				<div class="clear"></div>
@@ -277,7 +275,7 @@ class Wolf_Metaboxes {
 					/* Bg Image */
 					if ( ! in_array( 'color', $exclude_params ) ) {
 					?>
-					<p><?php esc_html_e( 'Background color', '%TEXTDOMAIN%' ); ?></p>
+					<p><?php esc_html_e( 'Background color', 'wolf-metaboxes' ); ?></p>
 					<input name="<?php echo esc_attr( $field_id . '_color' ); ?>" name="<?php echo esc_attr( $field_id . '_color' ); ?>" class="wmbox-colorpicker" type="text" value="<?php echo esc_attr( $bg_meta_color ); ?>">
 					<br><br>
 					<?php
@@ -285,12 +283,12 @@ class Wolf_Metaboxes {
 					if ( ! in_array( 'image', $exclude_params ) ) {
 
 					?>
-					<p><?php esc_html_e( 'Background image', '%TEXTDOMAIN%' ); ?></p>
+					<p><?php esc_html_e( 'Background image', 'wolf-metaboxes' ); ?></p>
 					<div>
 						<input type="hidden" name="<?php echo esc_attr( $field_id ); ?>_img" id="<?php echo esc_attr( $field_id ); ?>_img" value="<?php echo esc_attr( $img ); ?>">
 						<img style="max-width:250px;<?php if ( ! $img ) echo ' display:none;'; ?>" class="wmbox-img-preview" src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $field_id ); ?>">
-						<br><a href="#" class="button wmbox-reset-bg"><?php esc_html_e( 'Clear', '%TEXTDOMAIN%' ); ?></a>
-						<a href="#" class="button wmbox-set-bg"><?php esc_html_e( 'Choose an image', '%TEXTDOMAIN%' ); ?></a>
+						<br><a href="#" class="button wmbox-reset-bg"><?php esc_html_e( 'Clear', 'wolf-metaboxes' ); ?></a>
+						<a href="#" class="button wmbox-set-bg"><?php esc_html_e( 'Choose an image', 'wolf-metaboxes' ); ?></a>
 					</div>
 					<br><br>
 					<?php
@@ -302,7 +300,7 @@ class Wolf_Metaboxes {
 
 					?>
 					<br>
-					<p><?php esc_html_e( 'Background repeat', '%TEXTDOMAIN%' ); ?></p>
+					<p><?php esc_html_e( 'Background repeat', 'wolf-metaboxes' ); ?></p>
 					<select name="<?php echo esc_attr( $field_id ) . '_repeat'; ?>" id="<?php echo esc_attr( $field_id ) . '_repeat'; ?>">
 						<?php foreach ( $options as $o): ?>
 							<option value="<?php echo esc_attr( $o ); ?>" <?php if ( $o == $bg_meta_repeat ) echo 'selected="selected"'; ?>><?php echo esc_attr( $o ); ?></option>
@@ -326,7 +324,7 @@ class Wolf_Metaboxes {
 
 					?>
 					<br><br>
-					<p><?php esc_html_e( 'Background position', '%TEXTDOMAIN%' ); ?></p>
+					<p><?php esc_html_e( 'Background position', 'wolf-metaboxes' ); ?></p>
 					<select name="<?php echo esc_attr( $field_id ) . '_position'; ?>" id="<?php echo esc_attr( $field_id ) . '_position'; ?>">
 						<?php foreach ( $options as $o): ?>
 							<option value="<?php echo esc_attr( $o ); ?>" <?php if ( $o == $bg_meta_position ) echo 'selected="selected"'; ?>><?php echo esc_attr( $o ); ?></option>
@@ -339,14 +337,14 @@ class Wolf_Metaboxes {
 					/* size
 					--------------------*/
 					$options = array(
-						'cover' => esc_html__( 'cover (resize)', '%TEXTDOMAIN%' ),
-						'normal' => esc_html__( 'normal', '%TEXTDOMAIN%' ),
-						'resize' => esc_html__( 'responsive (hard resize)', '%TEXTDOMAIN%' ),
+						'cover' => esc_html__( 'cover (resize)', 'wolf-metaboxes' ),
+						'normal' => esc_html__( 'normal', 'wolf-metaboxes' ),
+						'resize' => esc_html__( 'responsive (hard resize)', 'wolf-metaboxes' ),
 					);
 
 					?>
 					<br><br>
-					<p><?php esc_html_e( 'Background size', '%TEXTDOMAIN%' ); ?></p>
+					<p><?php esc_html_e( 'Background size', 'wolf-metaboxes' ); ?></p>
 					<select name="<?php echo esc_attr( $field_id ) . '_size'; ?>" id="<?php echo esc_attr( $field_id ) . '_size'; ?>">
 						<?php foreach ( $options as $k => $v ) : ?>
 							<option value="<?php echo esc_attr( $k ); ?>" <?php if ( $k == $bg_meta_size ) echo 'selected="selected"'; ?>><?php echo sanitize_text_field( $v ); ?></option>
@@ -357,7 +355,7 @@ class Wolf_Metaboxes {
 					if ( $parallax ) {
 						?>
 						<br><br>
-						<p><strong><?php esc_html_e( 'Parallax', '%TEXTDOMAIN%' ); ?></strong></p>
+						<p><strong><?php esc_html_e( 'Parallax', 'wolf-metaboxes' ); ?></strong></p>
 						<input <?php if ( $bg_meta_parallax ) echo 'checked="checked"'; ?> type="checkbox" name="<?php echo esc_attr( $field_id ) . '_parallax'; ?>" id="<?php echo esc_attr( $field_id ) . '_parallax'; ?>">
 						<?php
 					}
@@ -375,7 +373,7 @@ class Wolf_Metaboxes {
 					} else {
 						$attachments = explode( ',', $meta );
 					}
-					$reset_multiple_image_confirm = esc_html__( 'Are you sure to want to reset all images ?', '%TEXTDOMAIN%' );
+					$reset_multiple_image_confirm = esc_html__( 'Are you sure to want to reset all images ?', 'wolf-metaboxes' );
 					?>
 					<div class="wmbox-images-set clearfix">
 						<?php
@@ -405,8 +403,8 @@ class Wolf_Metaboxes {
 					<div class="clear"></div>
 					<br>
 					<input type="hidden" name="<?php echo esc_attr( $field_id ); ?>" value="<?php echo esc_attr( $meta ); ?>">
-					<a href="#" class="button wmbox-param-reset-all-img"><?php esc_html_e( 'Clear All', '%TEXTDOMAIN%' ); ?></a>
-					<a href="#" class="button wmbox-param-set-multiple-img"><?php esc_html_e( 'Select Images', '%TEXTDOMAIN%' ); ?></a>
+					<a href="#" class="button wmbox-param-reset-all-img"><?php esc_html_e( 'Clear All', 'wolf-metaboxes' ); ?></a>
+					<a href="#" class="button wmbox-param-set-multiple-img"><?php esc_html_e( 'Select Images', 'wolf-metaboxes' ); ?></a>
 				</div>
 
 				<div class="clear"></div>
@@ -419,8 +417,8 @@ class Wolf_Metaboxes {
 					?>
 					<div class="wmbox-video-bg-field">
 						<input type="text"  name="<?php echo esc_attr( $field_id ); ?>" id="<?php echo esc_attr( $field_id ); ?>" size="30" value="<?php echo esc_url( $meta_url ); ?>">
-						<br><a href="#" class="button wmbox-reset-file"><?php esc_html_e( 'Clear', '%TEXTDOMAIN%' ); ?></a>
-						<a href="#" class="button wmbox-set-video-file"><?php esc_html_e( 'Choose a file', '%TEXTDOMAIN%' ); ?></a>
+						<br><a href="#" class="button wmbox-reset-file"><?php esc_html_e( 'Clear', 'wolf-metaboxes' ); ?></a>
+						<a href="#" class="button wmbox-set-video-file"><?php esc_html_e( 'Choose a file', 'wolf-metaboxes' ); ?></a>
 						<br>
 						<?php if ( $desc ) : ?>
 							<span class="description"><?php echo sanitize_text_field( $desc ); ?></span>
@@ -437,7 +435,7 @@ class Wolf_Metaboxes {
 					$google_fonts = ( function_exists( 'wvc_get_google_fonts_options' ) ) ? wvc_get_google_fonts_options() : array();
 
 					$font_choices = array(
-						'' => '&mdash; ' . esc_html__( 'Default', '%TEXTDOMAIN%' ) . ' &mdash;',
+						'' => '&mdash; ' . esc_html__( 'Default', 'wolf-metaboxes' ) . ' &mdash;',
 					);
 
 					foreach ( $google_fonts as $key => $value ) {
@@ -467,7 +465,7 @@ class Wolf_Metaboxes {
 	 * Save post meta hook
 	 */
 	public function save( $post_id ) {
-		
+
 		global $post;
 
 		$meta_fields = '';
@@ -577,7 +575,7 @@ class Wolf_Metaboxes {
 								} elseif ( 'editor' == $type ) {
 
 									$new = $_POST[ $field_id ];
-								
+
 								} else {
 
 									$new = sanitize_text_field( $_POST[ $field_id ] );
@@ -676,10 +674,10 @@ class Wolf_Metaboxes {
 		wp_enqueue_script( 'wmbox-admin', WMBOX_URI . '/assets/js/admin/admin.js', array( 'jquery', 'jquery-ui-sortable', 'wp-color-picker' ), $version, true );
 
 		wp_localize_script( 'wmbox-admin', 'WolfMetaboxesAdminParams', array(
-			'chooseImage' => esc_html__( 'Select an image', '%TEXTDOMAIN%' ),
-			'chooseMultipleImage' => esc_html__( 'Select a set of images', '%TEXTDOMAIN%' ),
-			'chooseFile' => esc_html__( 'Select a file', '%TEXTDOMAIN%' ),
-			'confirmRemoveAllImages' => esc_html__( 'This will remove the entire image set', '%TEXTDOMAIN%' ),
+			'chooseImage' => esc_html__( 'Select an image', 'wolf-metaboxes' ),
+			'chooseMultipleImage' => esc_html__( 'Select a set of images', 'wolf-metaboxes' ),
+			'chooseFile' => esc_html__( 'Select a file', 'wolf-metaboxes' ),
+			'confirmRemoveAllImages' => esc_html__( 'This will remove the entire image set', 'wolf-metaboxes' ),
 		) );
 
 	}

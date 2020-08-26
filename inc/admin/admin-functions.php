@@ -1,18 +1,16 @@
 <?php
 /**
- * %NAME% admin functions
+ * Wolf Metaboxes admin functions
  *
  * Functions available on admin
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Core
- * @version %VERSION%
+ * @package WolfMetaboxes/Core
+ * @version 1.0.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * remove meta boxes
