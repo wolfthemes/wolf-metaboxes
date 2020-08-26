@@ -1,0 +1,142 @@
+.wmbox-metabox-tabs-panel {
+	margin-top: 14px;
+}
+
+ul.wmbox-metabox-tabs{
+
+	li{
+		display: inline-block;
+		outline: none!important;
+		border:none;
+
+		a{
+			padding: 15px;
+			display: block;
+			text-decoration: none;
+			color: #000;
+			outline: none!important;
+			box-shadow: none!important;
+			background:rgba(0,0,0,.03);
+			border: 1px solid rgba(0,0,0,.1);
+			border-bottom: none;
+			margin-right: 3px;
+			opacity: .88;
+		}
+
+		&.ui-tabs-active{
+			a{
+				//font-weight: 700;
+				background:#fff;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.wmbox-metabox-panel{
+
+	* {
+		box-sizing: border-box;
+	 	 
+	 	 &:after, &:before {
+			box-sizing: border-box;
+		}
+	}
+
+	.field{
+		margin-top: 18px;
+		margin-bottom: 18px;
+		padding-bottom: 18px;
+		padding-left: 15px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		display: table;
+		width: 100%;
+
+		&:last-child{
+			border:none;
+			margin-bottom: 0;
+		}
+	}
+
+	.field-label,
+	.field-content{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.field-label{
+		max-width: 250px;
+		width: 15%;
+	}
+
+	.field-content{
+		select{
+			min-width: 180px;
+		}
+	}
+
+	label{
+		font-weight: 600;
+		color: #444;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+.wmbox-images-set .wmbox-image{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:after, &:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+
+	float: left;
+	width: 25%;
+	max-width: 150px;
+	cursor: move;
+	display:block;
+	padding:3px;
+	position: relative;
+
+	img{
+		width: 100%;
+		display: block;
+		vertical-align: bottom;
+	}
+
+	.wmbox-remove-img{
+		position: absolute;
+		color: #FFF;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		z-index: 5;
+		top: 3px;
+		right: 0;
+		font-weight: normal;
+
+		&:before{
+			content:'\00D7';
+			font-size: 24px;
+			color: #FFF!important;
+		}
+	}
+}
+
+.wmbox-video-bg-field{
+	.description{
+		margin-top: 15px;
+		display: block;
+		max-width: 750px;
+	}
+	input{
+		margin-bottom: 5px;
+	}
+}
+
+.option-section-_wolf_release_tracklist{
+	display: none!important;
+}

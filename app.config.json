@@ -1,0 +1,14 @@
+{
+	"version": "1.0.3",
+	"updated": "2018-09-28",
+	"slug": "wolf-metaboxes",
+	"name": "Wolf Metaboxes",
+	"packagename": "WolfMetaboxes",
+	"created": "2018-05-09",
+	"createdNice": "9th May 2018",
+	"description": "Add metaboxes to your theme.",
+	"link": "https://github.com/wolfthemes/wolf-metaboxes",
+	"shortlink": "http://wlfthm.es/wolf-metaboxes",
+	"author": "WolfThemes",
+	"authorURI": "http://wolfthemes.com"
+}

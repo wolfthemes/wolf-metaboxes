@@ -1,0 +1,16 @@
+{
+	"name": "wolfthemes/wolf-metaboxes",
+	"description": "Add metaboxes to your theme.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-metaboxes",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	}
+}
