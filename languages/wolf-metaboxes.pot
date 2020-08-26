@@ -1,0 +1,191 @@
+# Copyright (C) 2020 WolfThemes
+# This file is distributed under the same license as the Wolf Metaboxes package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wolf Metaboxes 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-metaboxes\n"
+"POT-Creation-Date: 2020-08-26 11:34:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+#. translators: A single line translators comment.
+msgid "A"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+#. translators: A multiline translators comment.
+msgid "B"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:61
+msgid "%s Options"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:145
+msgid "Label"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:228
+#: inc/admin/lib/class-metabox-tabs.php:246
+#: inc/admin/lib/class-metabox-tabs.php:292
+#: inc/admin/lib/class-metabox-tabs.php:422
+msgid "Clear"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:229
+#: inc/admin/lib/class-metabox-tabs.php:423
+msgid "Choose a file"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:247
+#: inc/admin/lib/class-metabox-tabs.php:293
+msgid "Choose an image"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:280
+msgid "Background color"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:288
+msgid "Background image"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:305
+msgid "Background repeat"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:329
+msgid "Background position"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:342
+msgid "cover (resize)"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:343
+msgid "normal"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:344
+msgid "responsive (hard resize)"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:349
+msgid "Background size"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:360
+msgid "Parallax"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:378
+msgid "Are you sure to want to reset all images ?"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:408
+msgid "Clear All"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:409
+msgid "Select Images"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:440
+msgid "Default"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:679
+msgid "Select an image"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:680
+msgid "Select a set of images"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:681
+msgid "Select a file"
+msgstr ""
+
+#: inc/admin/lib/class-metabox-tabs.php:682
+msgid "This will remove the entire image set"
+msgstr ""
+
+#: inc/admin/updater.php:434
+msgid ""
+"The plugin has been updated, but could not be reactivated. Please "
+"reactivate it manually."
+msgstr ""
+
+#: inc/admin/updater.php:435
+msgid "Plugin reactivated successfully."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Wolf Metaboxes"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/wolfthemes/wolf-metaboxes"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add metaboxes to your theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WolfThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wolfthemes.com"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""
