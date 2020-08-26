@@ -1,6 +1,6 @@
 # Changelog
 
-#### 28th September 2018 - Version 1.0.4
+#### 26th August 2020 - Version 1.0.4
 
 -   Tweak: Move project to GH
 
