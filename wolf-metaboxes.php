@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Wolf Metaboxes
+ * Plugin Name: Metaboxes
  * Plugin URI: https://github.com/wolfthemes/wolf-metaboxes
  * Description: Add metaboxes to your theme.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: WolfThemes
  * Author URI: http://wolfthemes.com
  * Requires at least: 5.0
@@ -30,7 +30,7 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 	 * Contains the main functions for Wolf_Metaboxes_Plugin
 	 *
 	 * @class Wolf_Metaboxes_Plugin
-	 * @version 1.0.4
+	 * @version 1.0.5
 	 * @since 1.0.0
 	 */
 	class Wolf_Metaboxes_Plugin {
@@ -38,7 +38,7 @@ if ( ! class_exists( 'Wolf_Metaboxes_Plugin' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.0.4';
+		public $version = '1.0.5';
 
 		/**
 		 * @var Wolf Metaboxes The single instance of the class

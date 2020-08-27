@@ -1,10 +1,10 @@
 # Copyright (C) 2020 WolfThemes
-# This file is distributed under the same license as the Wolf Metaboxes package.
+# This file is distributed under the same license as the Metaboxes package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wolf Metaboxes 1.0.4\n"
+"Project-Id-Version: Metaboxes 1.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-metaboxes\n"
-"POT-Creation-Date: 2020-08-26 11:34:54+00:00\n"
+"POT-Creation-Date: 2020-08-27 13:18:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,96 +60,96 @@ msgstr ""
 msgid "B"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:61
+#: inc/admin/lib/class-metabox-tabs.php:59
 msgid "%s Options"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:145
+#: inc/admin/lib/class-metabox-tabs.php:143
 msgid "Label"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:228
-#: inc/admin/lib/class-metabox-tabs.php:246
-#: inc/admin/lib/class-metabox-tabs.php:292
-#: inc/admin/lib/class-metabox-tabs.php:422
+#: inc/admin/lib/class-metabox-tabs.php:226
+#: inc/admin/lib/class-metabox-tabs.php:244
+#: inc/admin/lib/class-metabox-tabs.php:290
+#: inc/admin/lib/class-metabox-tabs.php:420
 msgid "Clear"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:229
-#: inc/admin/lib/class-metabox-tabs.php:423
+#: inc/admin/lib/class-metabox-tabs.php:227
+#: inc/admin/lib/class-metabox-tabs.php:421
 msgid "Choose a file"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:247
-#: inc/admin/lib/class-metabox-tabs.php:293
+#: inc/admin/lib/class-metabox-tabs.php:245
+#: inc/admin/lib/class-metabox-tabs.php:291
 msgid "Choose an image"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:280
+#: inc/admin/lib/class-metabox-tabs.php:278
 msgid "Background color"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:288
+#: inc/admin/lib/class-metabox-tabs.php:286
 msgid "Background image"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:305
+#: inc/admin/lib/class-metabox-tabs.php:303
 msgid "Background repeat"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:329
+#: inc/admin/lib/class-metabox-tabs.php:327
 msgid "Background position"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:342
+#: inc/admin/lib/class-metabox-tabs.php:340
 msgid "cover (resize)"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:343
+#: inc/admin/lib/class-metabox-tabs.php:341
 msgid "normal"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:344
+#: inc/admin/lib/class-metabox-tabs.php:342
 msgid "responsive (hard resize)"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:349
+#: inc/admin/lib/class-metabox-tabs.php:347
 msgid "Background size"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:360
+#: inc/admin/lib/class-metabox-tabs.php:358
 msgid "Parallax"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:378
+#: inc/admin/lib/class-metabox-tabs.php:376
 msgid "Are you sure to want to reset all images ?"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:408
+#: inc/admin/lib/class-metabox-tabs.php:406
 msgid "Clear All"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:409
+#: inc/admin/lib/class-metabox-tabs.php:407
 msgid "Select Images"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:440
+#: inc/admin/lib/class-metabox-tabs.php:438
 msgid "Default"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:679
+#: inc/admin/lib/class-metabox-tabs.php:677
 msgid "Select an image"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:680
+#: inc/admin/lib/class-metabox-tabs.php:678
 msgid "Select a set of images"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:681
+#: inc/admin/lib/class-metabox-tabs.php:679
 msgid "Select a file"
 msgstr ""
 
-#: inc/admin/lib/class-metabox-tabs.php:682
+#: inc/admin/lib/class-metabox-tabs.php:680
 msgid "This will remove the entire image set"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgid "Plugin reactivated successfully."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Wolf Metaboxes"
+msgid "Metaboxes"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

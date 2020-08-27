@@ -1,4 +1,4 @@
-# Thanks for downloading Wolf Metaboxes!
+# Thanks for downloading Metaboxes!
 
 Add metaboxes to your theme.
 
